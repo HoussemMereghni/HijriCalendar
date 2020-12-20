@@ -1,0 +1,212 @@
+﻿<html>
+  <head>
+    <style>
+      body {
+        font-family: "lato", sans-serif;
+      }
+      .container {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 40%;
+      }
+      h2 {
+        font-size: 26px;
+        margin: 20px 0;
+        text-align: center;
+      }
+      h2 small {
+        font-size: 0.5em;
+      }
+      .responsive-table li {
+        border-radius: 3px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+      }
+      .responsive-table .table-header {
+        background-color: #ffe9c7;
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        text-align: right;
+      }
+      .responsive-table .table-row1 {
+        background-color: #fff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 2);
+        text-align: right;
+      }
+      .responsive-table .table-row2 {
+        background-color: #fff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 2);
+        text-align: right;
+      }
+      .responsive-table .table-row3 {
+        background-color: #fff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 2);
+        text-align: right;
+      }
+      .responsive-table .table-row4 {
+        background-color: #fff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 2);
+        text-align: right;
+      }
+      .responsive-table .table-row5 {
+        background-color: #fff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 2);
+        text-align: right;
+      }
+      .responsive-table .col-1 {
+        flex-basis: 10%;
+        display: contents;
+      }
+      .responsive-table .col-21 {
+        flex-basis: 10%;
+      }
+      .responsive-table .col-2 {
+        flex-basis: 40%;
+        display: contents;
+      }
+      .responsive-table .col-3 {
+        flex-basis: 25%;
+        display: contents;
+      }
+      .responsive-table .col-4 {
+        flex-basis: 25%;
+        display: contents;
+      }
+      @media all and (max-width: 767px) {
+        .responsive-table .table-header {
+          display: none;
+        }
+        .responsive-table li {
+          display: block;
+        }
+        .responsive-table .col {
+          flex-basis: 100%;
+        }
+        .responsive-table .col {
+          display: flex;
+          padding: 10px 0;
+        }
+        .responsive-table .col:before {
+          color: #6c7a89;
+          padding-right: 10px;
+          content: attr(data-label);
+          flex-basis: 50%;
+          text-align: right;
+        }
+      }
+
+      /* Card Widgets styling */
+
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #323c41;
+      }
+      .blog-card {
+        width: 400px;
+        height: 700px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -250px 0 0 -175px;
+
+        border-radius: 10px;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
+      .blog-card.spring-fever {
+        background-image: url("bckpray.jpg");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .blog-card:hover .card-info {
+        opacity: 1;
+        bottom: 120px;
+      }
+      .blog-card:hover .color-overlay {
+        background: rgba(84, 104, 110, 0.8);
+      }
+      .title-content {
+        text-align: center;
+        margin: 10px 0 0 0;
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: black;
+
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 0;
+      }
+      hr {
+        width: 50px;
+        height: 3px;
+        margin: 20px auto;
+        border: 0;
+        background: #d0bb57;
+      }
+    </style>
+    <p></p>
+  </head>
+
+  <body>
+    <div class="blog-card spring-fever">
+      <div class="title-content">
+        <h3></h3>
+        <hr />
+      </div>
+      <!-- /.title-content -->
+      <div class="container">
+        <h2></h2>
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-11">التوقيت</div>
+            <div class="col col-2">الصلاة</div>
+          </li>
+          <li class="table-row1"></li>
+          <li class="table-row2"></li>
+          <li class="table-row3"></li>
+          <li class="table-row4"></li>
+          <li class="table-row5"></li>
+        </ul>
+      </div>
+      <div class="utility-info">
+        <ul class="utility-list"></ul>
+      </div>
+      <!-- /.utility-info -->
+      <!-- overlays -->
+      <div class="gradient-overlay"></div>
+      <div class="color-overlay"></div>
+    </div>
+    <!-- /.blog-card -->
+  </body>
+</html>
+
+<script
+  type="text/javascript"
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+></script>
+<script type="text/javascript" src="../paryerWidget/hijri.js"></script>
+<script type="text/javascript">
+
+</script>
