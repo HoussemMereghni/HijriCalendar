@@ -2,7 +2,7 @@
 ## Output Hijri current date
 
 - Functions: **gomod** and **calendar** converts Gregorian calendar to hijri calendar.
-- Function: **writeIslamicDate** outputs urrent date in the following format:
+- Function: **writeIslamicDate** outputs current date in the following format:
 > الأحَد, 6 جُمَادَىٰ ٱلْأُولَىٰ 1442 الموافق ل 20-12-2020
 
 ## Output Prayer Times
